@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furniture Website</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <style>
+    .nav-icons i {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(4px);
+      border-radius: 4px;
+      padding: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="nav container">
+      <!-- Menu icon -->
+      <div class="menu-icon">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+
+      <!-- Navbar -->
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#popular">Popular</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="cart/cart.html">My Cart</a></li>
+      </ul>
+
+      <!-- Logo -->
+      <a href="#" class="logo">Furnish<span>.Home's</span></a>
+
+      <!-- Nav Icons -->
+      <div class="nav-icons">
+        <i class='bx bx-user' id="user-icon"></i>
+      </div>
+
+      <!-- Cart -->
+      <div class="cart">
+        <div class="cart-content">
+          <div class="cart-box">
+            <img src="img/products1.png" alt="Product 1">
+            <div class="cart-text">
+              <h3>Soft Furniture</h3>
+              <span>$150</span>
+              <span>x1</span>
+            </div>
+            <i class='bx bx-trash'></i>
+          </div>
+
+          <div class="cart-box">
+            <img src="img/products2.png" alt="Product 2">
+            <div class="cart-text">
+              <h3>Soft Furniture</h3>
+              <span>$150</span>
+              <span>x1</span>
+            </div>
+            <i class='bx bx-trash'></i>
+          </div>
+
+          <div class="total">
+            <h3>2 items</h3>
+            <span>Total: $300</span>
+          </div>
+          <a href="#" class="btn">Proceed To Payment</a>
+        </div>
+      </div>
+
+      <!-- Login Form -->
+      <div class="login-form">
+        <h2 style="position: absolute; top: 5.5rem; left: 50%; transform: translateX(-50%);">Let Us Know Your Suggestions</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="f42e3c85-7f93-4ffa-9e44-678f8a691136">
+          <input type="text" name="name" placeholder="Enter Your Name" required>
+          <input type="email" name="email" placeholder="Enter Your Email" required>
+          <textarea name="message" placeholder="Enter Your Suggestion" required></textarea>
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          <button type="submit" style="background-color: #9b5c41; color: #fff; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Submit Form</button>
+          <a href="http://localhost/backend/register.php"><h3>Click Here To Register Yourself...</h3></a>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home container" id="home">
+    <div class="home-text">
+      <h1><span>Modern Furniture</span> For Your Home</h1>
+      <p>We Understand Your Needs For Home Decor<br>With Unique Decorative Accessories</p>
+      <a href="cart/cart.html" class="btn">Shop More</a>
+    </div>
+    <div class="home-img">
+      <img src="img/Sofa.png" alt="Home Sofa">
+    </div>
+  </section>
+
+  <!-- Popular Section -->
+  <section class="popular container" id="popular">
+    <div class="heading">
+      <h2>Popular Products</h2>
+      <a href="cart/cart.html">Click Here To Buy</a>
+    </div>
+    <div class="popular-content">
+      <!-- Repeated Product Boxes -->
+      <div class="box"><img src="img/products1.png" alt="">
+        <div class="box-text"><div class="title-price">
+          <h3>Drawer Short</h3>
+          <span>$150</span>
+        </div>
+      </div>
+    </div>
+      <div class="box"><img src="img/products2.png" alt="">
+        <div class="box-text"><div class="title-price">
+          <h3>Flower Pot Rack</h3>
+          <span>$150</span>
+        </div>
+      </div>
+    </div>
+      <div class="box"><img src="img/products6.png" alt="">
+        <div class="box-text"><div class="title-price">
+          <h3>Sofa Chair</h3>
+          <span>$150</span>
+        </div>
+      </div>
+    </div>
+      <div class="box"><img src="img/products4.png" alt="">
+        <div class="box-text"><div class="title-price">
+          <h3>Multi Drawer</h3>
+          <span>$150</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about container" id="about">
+    <div class="about-img">
+      <img src="img/about.png" alt="About Image">
+    </div>
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>Welcome to Home Decor, your online haven for modern furniture that marries style and functionality. Our curated collection features contemporary pieces designed to elevate your living spaces while ensuring quality and comfort.
+      We pride ourselves on partnering with talented designers and artisans who share our commitment to sustainability and ethical practices. Shopping with us is a breeze, with a user-friendly website and fast shipping to your door.</p>
+      <h3>Our Services :-</h3><br>
+      <div class="features">
+        <i class='bx bxs-checkbox-checked'><span>Free Shipping And Home Delivery</span></i>
+        <i class='bx bxs-checkbox-checked'><span>Easy Return</span></i>
+        <i class='bx bxs-checkbox-checked'><span>Quality Assured</span></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products container" id="products">
+    <div class="heading">
+      <h2>Products Shop</h2>
+      <a href="cart/cart.html">Click Here To Buy</a>
+    </div>
+    <div class="product-content">
+      <!-- Repeatable Boxes -->
+      <div class="box"><img src="img/products1.png" alt="">
+        <div class="box-text"><div class="title-price">
+          <h3>Drawer Short Table</h3>
+          <span>$150</span>
+        </div>
+      </div>
+    </div>
+      <div class="box"><img src="img/products2.png" alt="">
+        <div class="box-text"><div class="title-price">
+          <h3>Flower Pot Rack</h3>
+          <span>$150</span>
+        </div>
+      </div>
+    </div>
+      <div class="box"><img src="img/products3.png" alt="">
+        <div class="box-text"><div class="title-price">
+          <h3>Study Table</h3>
+          <span>$150</span>
+        </div>
+      </div>
+    </div>
+      <div class="box"><img src="img/products4.png" alt="">
+        <div class="box-text"><div class="title-price">
+          <h3>Polished Wooden</h3>
+          <span>$150</span>
+        </div>
+      </div>
+    </div>
+      <div class="box"><img src="img/products5.png" alt="">
+        <div class="box-text"><div class="title-price">
+          <h3>6 Sitting Dining</h3>
+          <span>$150</span>
+        </div>
+      </div>
+    </div>
+      <div class="box"><img src="img/products6.png" alt="">
+        <div class="box-text"><div class="title-price">
+          <h3>Sofa Chair</h3>
+          <span>$150</span>
+        </div>
+      </div>
+    </div>
+      <div class="box"><img src="img/products7.png" alt="">
+        <div class="box-text"><div class="title-price">
+          <h3>Double Bed</h3>
+          <span>$150</span>
+        </div>
+      </div>
+    </div>
+      <div class="box"><img src="img/products8.png" alt="">
+        <div class="box-text"><div class="title-price">
+          <h3>Premium Yellow</h3>
+          <span>$150</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="newsletter-content container">
+      <div class="newsletter-text">
+        <h2>Signup and Win</h2>
+        <p>Subscribe and get a chance to win a free surprise gift</p>
+      </div>
+      <form action="">
+        <input type="email" placeholder="Enter Your Email..." required>
+        <input type="submit" value="Subscribe" class="btn">
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <section class="footer container">
+    <div class="footer-box">
+      <h3> Company</h3><hr><br>
+      <a href="#">About</a>
+      <a href="#">Help</a>
+      <a href="#">Blog</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <div class="footer-box">
+      <h3>Specialize</h3><hr><br>
+      <a href="#">Kitchen</a>
+      <a href="#">Bedroom</a>
+      <a href="#">Living Room</a>
+      <a href="#">Outdoor</a>
+    </div>
+    <div class="footer-box">
+      <h3>Services</h3><hr><br>
+      <a href="#">Shipping</a>
+      <a href="#">Delivery & Returns</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Sitemap</a>
+    </div>
+    <div class="footer-box">
+      <h3>Social</h3><hr><br>
+      <div class="social">
+        <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+        <a href="https://x.com/"><i class='bx bxl-twitter'></i></a>
+        <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Copyright -->
+  <div class="copyright">
+    <p>&#169; All Rights Reserved | Designed By Meet Prajapati & Dhawal Rawat</p>
+  </div>
+
+  <!-- JS File -->
+  <script src="main.js"></script>
+</body>
+</html>

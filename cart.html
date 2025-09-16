@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Shopping Cart</a>
+        <div id="cart-icon">
+            <i class="ri-shopping-cart-2-fill"></i>       
+             <span class="cart-item-count"></span>
+        </div>
+    </header>
+
+    <div class="cart">
+        <h2 class="cart-title">Your cart</h2>
+        <div class="cart-content">
+            <!--<div class="cart-box">
+                <img src="img/products1.png" class="cart-img">
+                <div class="cart-details">
+                    <h2 class="cart-product-title">product 1</h2>
+                    <span class="cart-price">$100</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <span class="number">1</span>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
+                <i class="ri-delete-bin-2-line cart-remove"></i>
+            </div>-->
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+        <button class="btn-buy">Buy Now</button>
+        <i class="ri-close-line" id="cart-close"></i>
+    </div>
+
+    <section class="shop">
+        <h1 class="section-title">Products</h1>
+        <div class="product-content">
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="img/products1.png">
+                </div>
+                <h2><div class="product-title">product 1</div></h2>
+                <div class="price-and-cart">
+                    <span class="price">$100</span>
+                    <i class="ri-shopping-cart-2-fill add-cart"></i>       
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="img/products2.png">
+                </div>
+                <h2><div class="product-title">product 2</div></h2>
+                <div class="price-and-cart">
+                    <span class="price">$100</span>
+                    <i class="ri-shopping-cart-2-fill add-cart"></i>       
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="img/products8.png">
+                </div>
+                <h2><div class="product-title">product 3</div></h2>
+                <div class="price-and-cart">
+                    <span class="price">$100</span>
+                    <i class="ri-shopping-cart-2-fill add-cart"></i>       
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="img/products4.png">
+                </div>
+                <h2><div class="product-title">product 4</div></h2>
+                <div class="price-and-cart">
+                    <span class="price">$100</span>
+                    <i class="ri-shopping-cart-2-fill add-cart"></i>       
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="img/products5.png">
+                </div>
+                <h2><div class="productn-title">product 5</div></h2>
+                <div class="price-and-cart">
+                    <span class="price">$100</span>
+                    <i class="ri-shopping-cart-2-fill add-cart"></i>       
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="img/popular1.png">
+                </div>
+                <h2><div class="product-title">product 6</div></h2>
+                <div class="price-and-cart">
+                    <span class="price">$100</span>
+                    <i class="ri-shopping-cart-2-fill add-cart"></i>       
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="img/pngwing.com-1.png">
+                </div>
+                <h2><div class="product-title">product 7</div></h2>
+                <div class="price-and-cart">
+                    <span class="price">$100</span>
+                    <i class="ri-shopping-cart-2-fill add-cart"></i>       
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="img/products8.png">
+                </div>
+                <h2><div class="product-title">product 8</div></h2>
+                <div class="price-and-cart">
+                    <span class="price">$100</span>
+                    <i class="ri-shopping-cart-2-fill add-cart"></i>       
+                </div>
+            </div>
+        </div>
+    </section>  
+    <script src="cart.js"></script>
+</body>
+</html>
