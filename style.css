@@ -301,8 +301,7 @@ header.shadow {
 .home-img {
     position: relative;
 }
-.home-img::after {
-    content: '';
+.home-img::after {
     height: 215px;
     width: 490px;
     background: var(--light-color);
